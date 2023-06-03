@@ -8,6 +8,29 @@
     
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    <style>
+        .section-heading {
+          text-align: center;
+          margin-bottom: 20px;
+        }
+      
+        .section-heading button {
+          padding: 12px 24px;
+          font-size: 18px;
+          background-color: #4CAF50;
+          color: #fff;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+      </style>
+
+<script>
+    function toggleContactForm() {
+      var formContainer = document.getElementById("contact-form-container");
+      formContainer.style.display = formContainer.style.display === "none" ? "block" : "none";
+    }
+  </script>
 </head>
 <body>
 
@@ -24,7 +47,7 @@
                       <a href="#about">About</a>
                       <a href="#skills">Skills</a>
                       <a href="#project">Projects</a>
-                      <a href="#">Blog</a>
+                      <a href="#hire-me">Blog</a>
                     </div>
                 </div>
                 <div class="right">
@@ -46,8 +69,8 @@
                         </ul>
                         
                     </div>
-                    <p> I am a software developer in many different front end and back end languages, responsive frameworks, databases, 
-                        and best code practices. My objective is simply to be the best software developer that I can be and to contribute to the 
+                    <p> I am a software developer for web back-end , microservices in JAVA language,I have Good Paractice in Java FrameWorks like Spring MVC , Springboot ,SpringbootMicroservice , SpringCloud, AWS Cloud ,Hibernate , responsive frameworks, databases, 
+                        and best code practices. My objective is simply to be the best Microservices developer that I can be and to contribute to the 
                         technology industry all that I know and can do. </p>
                         <div>
                            <a href="cv/ARVIND's Resume.pdf"><button class="btn btn-secondary">DOWNLOAD CV</button></a>
@@ -61,27 +84,22 @@
 
     <section id="about" class="about">
         <div class="container flex items-center">
-
-
             <div class="flex-1">
-                <div class="interests">
-                   
+                <div class="interests">       
                  <h1>Interests</h1>
                     <ul>
                      <li class="hii"><h3>Ethical hacking</h3></li>
                      <li class="hii"><h3>Web Development</h3></li>
                      <li class="hii"><h3>Information Retrieval</h3></li>
-                    </ul>
-                    
+                    </ul>       
                 </div>
-
 
             </div>
 
 
             <div class="flex-1 ">
                 <div class="education">
-                 <h1>Education <span>History</span></h1>
+                 <h1>Education History</h1>
                  <ul>
                     <ion-icon name ="Education-outline"></ion-icon>
                     <li class="hii"> <h3>Bachelor of Technology</h3> 
@@ -247,10 +265,9 @@
 
     <!----------------------------------------------------- Contact ---------------------------------------->
 
-    <section id="contact" class="contact">
+    <section id="contact" class="contact" >
         <div class="container">
             <h1 class="section-heading">Contact <span>Me</span></h1>
-            
             <div class="card-wrapper">
                 <div class="card">
                     <img src="images/cal11.jpg" alt="">
@@ -271,32 +288,28 @@
                 </div>
 
             </div>
-
-           <form action="https://formsubmit.co/d8a484035447a34c1e427a0b75be0322" method="POST">
-                <div class="input-wrap">
-                  <input type="text" placeholder="Your Name *">
-                  <input type="email" placeholder="Your Email *">
-                </div>
-
-                <div class="input-wrap-2">
-                    <input type="text" placeholder="Your Subject......">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Your Massage"></textarea>
-                </div>
-
-                <div class="btn-wrapper">
-                  <button class="btn btn-primary">Send Massage</button>
-                </div>
-           </form>
+  <div  id="hire-me"class="container">
+    <h1 class="section-heading">Hire me On Your Project </h1>
+    <div style="text-align: center;">
+        <button class="section-heading" onclick="toggleContactForm()" style="background-color: green; width: 200px; height: 40px; color: white; border: none; border-radius: 5px;">
+           <span style="color: white;font-size: px;">Enter Project Requiment Details</span></button>
+        </button>
+      </div>   
+          <!-- <h1 class="section-heading" onclick="toggleContactForm()">Click<span>here</span></h1> -->
+    <div id="contact-form-container" style="display: none;">
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdB-2nb01OHzXf0j7Si1m-koeGXSnkY1nTnH3HhXN2pGgwNuA" width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+    </div>
+  </div>              
         </div>
     </section>
 
     <footer>
         <img src="" alt="">
         <div class="footer-socials">
-            <a href="https://www.facebook.com/akshay.bahir.31"> <img src="images/5296499_fb_facebook_facebook logo_icon (1).png" alt=""></a>
-            <a href="https://twitter.com/AkshayBahir1"><img src="images/5296516_tweet_twitter_twitter logo_icon.png" alt=""></a>
+            <a href="https://www.facebook.com/profile.php?id=100093135169289"> <img src="images/5296499_fb_facebook_facebook logo_icon (1).png" alt=""></a>
+            <a href="https://twitter.com/convertedtechi"><img src="images/5296516_tweet_twitter_twitter logo_icon.png" alt=""></a>
             <a href="https://www.linkedin.com/in/0arvind1/"><img src="images/5296501_linkedin_network_linkedin logo_icon.png" alt=""></a>
-            <a href="https://www.instagram.com/akshaybahir_/"><img src="images/5296765_camera_instagram_instagram logo_icon.png" alt=""></a>
+            <a href="https://www.instagram.com/arvindsinghhhh/"><img src="images/5296765_camera_instagram_instagram logo_icon.png" alt=""></a>
         </div>
 
         <div class="copyright">
